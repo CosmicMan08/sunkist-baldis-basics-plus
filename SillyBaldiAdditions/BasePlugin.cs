@@ -63,13 +63,13 @@ namespace SillyBaldiAdditions
             //Debug.Log("addnpc reached");
             if (floorName.StartsWith("F"))
             {
-                floorObject.potentialNPCs.Add(new WeightedNPC() { selection = assetMan.Get<NPC>("Sunkist"), weight = 500 });
+                floorObject.potentialNPCs.Add(new WeightedNPC() { selection = assetMan.Get<NPC>("Sunkist"), weight = 75 });
                 floorObject.MarkAsNeverUnload();
                 //Debug.Log("sunkist spawn :3333");
             }
             else if (floorName == "END")
             {
-                floorObject.potentialNPCs.Add(new WeightedNPC() { selection = assetMan.Get<NPC>("Sunkist"), weight = 500 });
+                floorObject.potentialNPCs.Add(new WeightedNPC() { selection = assetMan.Get<NPC>("Sunkist"), weight = 50 });
                 floorObject.MarkAsNeverUnload();
             }
 
